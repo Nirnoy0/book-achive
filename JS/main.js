@@ -12,15 +12,11 @@ const searchBook = () => {
 const displaySearchResult = docs => {
     const searchResult = document.getElementById('search-result');
     docs.forEach(doc => {
-        // console.log(doc.title);
-        // console.log(doc.author_name);
-        // console.log(doc.first_publish_year);
-        // console.log(doc.publisher);
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
             <div class="card">
-                <img src="https://covers.openlibrary.org/b/id/=${doc.cover_i}-M.jpg" class="card-img-top" alt="Books Images">
+                <img src="https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg" class="card-img-top" alt="Books Images">
                 <div class="card-body">
                     <h5 class="card-title">${doc.title}</h5>
                     <p class="card-text">
