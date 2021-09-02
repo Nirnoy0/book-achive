@@ -15,6 +15,7 @@
     
     <main>
 
+        <!-- Search Section -->
         <section class="container">
             <h1></h1>
             <div class="input-group mb-3 my-5 w-50 mx-auto">
@@ -22,13 +23,27 @@
                 <button id="button-search" onclick="searchBook()" class="btn btn-outline-light" type="button">Search</button>
         </section>
 
+        <!-- Spinner -->
+        <div class="d-flex justify-content-center">
+            <button id="spinner" class=" btn btn-primary" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+        </div>
+
+
+        <!-- Total Search Data  -->
+        <div id="total-data" class="d-flex justify-content-center">
+
+        </div>
+
+
         <!-- book search result -->
         <div id="search-result" class="row row-cols-1 row-cols-md-3 g-5 m-5">
             
         </div>
         
     </main>
-
     
 
     <script src="js/main.js"></script>

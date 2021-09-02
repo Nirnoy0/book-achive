@@ -1,6 +1,31 @@
+/* Body Styles  */
 body {
     background: url(images/464354.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
     background-repeat: repeat-y;
+}
+
+/* Cards Style  */
+.card{
+    border-radius: 10px;
+}
+
+img{
+    padding: 30px;
+}
+
+/* spinner */
+#spinner{
+    display: none;
+}
+
+
+.data{
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: wheat;
+    font-weight: 700px;
 }
