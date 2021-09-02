@@ -5,9 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Archive</title>
+    <!-- Bootstarp Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: url(images/464354.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
     
+    <main>
+
+        <section class="container">
+            <h1></h1>
+            <div class="input-group mb-3 my-5 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control bg-white" placeholder="Search Your Books">
+                <button id="button-search" onclick="searchBook()" class="btn btn-outline-light" type="button">Search</button>
+            
+                
+            <!-- book search result -->
+            
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+            
+            </div>
+                
+        </section>
+
+        
+    </main>
+
     
+
+    <script src="js/main.js"></script>
 </body>
 </html>
